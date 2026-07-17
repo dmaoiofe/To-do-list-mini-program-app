@@ -1,0 +1,97 @@
+{
+  "root": {
+    "nodeId": "gen-project-shell",
+    "kind": "project-shell",
+    "pageIds": [
+      "page-calendar-home",
+      "page-task-editor",
+      "page-task-stats"
+    ],
+    "output": "partials/project-shell.html",
+    "sharedRegions": [
+      "status bar",
+      "mini program navigation chrome",
+      "page background",
+      "content width rhythm",
+      "footer information block"
+    ],
+    "privateRegions": [],
+    "mutableSlots": [
+      "pageTitle",
+      "leftNavAction",
+      "heroMetrics",
+      "primaryAction"
+    ],
+    "status": "generated",
+    "children": [
+      {
+        "nodeId": "gen-page-calendar-home",
+        "kind": "page-leaf",
+        "pageIds": [
+          "page-calendar-home"
+        ],
+        "output": "pages/calendar-home.html",
+        "sharedRegions": [],
+        "privateRegions": [
+          "calendar switcher",
+          "time grouped todo cards",
+          "completion archive hint",
+          "bottom primary action"
+        ],
+        "mutableSlots": [
+          "pageTitle",
+          "heroMetrics",
+          "primaryAction"
+        ],
+        "status": "generated",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-task-editor",
+        "kind": "page-leaf",
+        "pageIds": [
+          "page-task-editor"
+        ],
+        "output": "pages/task-editor.html",
+        "sharedRegions": [],
+        "privateRegions": [
+          "task form",
+          "tag selection",
+          "priority selector",
+          "reminder switch",
+          "save action area"
+        ],
+        "mutableSlots": [
+          "pageTitle",
+          "leftNavAction",
+          "primaryAction"
+        ],
+        "status": "generated",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-task-stats",
+        "kind": "page-leaf",
+        "pageIds": [
+          "page-task-stats"
+        ],
+        "output": "pages/task-stats.html",
+        "sharedRegions": [],
+        "privateRegions": [
+          "completion ring",
+          "week month chart",
+          "category list",
+          "archive entry"
+        ],
+        "mutableSlots": [
+          "pageTitle",
+          "leftNavAction",
+          "heroMetrics",
+          "primaryAction"
+        ],
+        "status": "generated",
+        "children": []
+      }
+    ]
+  }
+}

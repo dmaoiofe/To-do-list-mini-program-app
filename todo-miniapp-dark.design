@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "id": "page-calendar-home",
+      "title": "日历待办首页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1784271203684,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/calendar-home.html",
+        "interactions": [
+          {
+            "domId": "cta-task-editor",
+            "targetPageId": "page-task-editor",
+            "transitionLabel": "新建待办"
+          },
+          {
+            "domId": "shortcut-task-stats",
+            "targetPageId": "page-task-stats",
+            "hideEdge": true,
+            "transitionLabel": "数据统计"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-task-editor",
+      "title": "新增任务编辑页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1784271203684,
+      "canvasData": {
+        "x": 420,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/task-editor.html",
+        "interactions": [
+          {
+            "domId": "cta-task-stats",
+            "targetPageId": "page-task-stats",
+            "transitionLabel": "保存并查看统计"
+          },
+          {
+            "domId": "back-calendar-home",
+            "targetPageId": "page-calendar-home",
+            "hideEdge": true,
+            "transitionLabel": "返回首页"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-task-stats",
+      "title": "任务数据统计页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1784271203684,
+      "canvasData": {
+        "x": 840,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/task-stats.html",
+        "interactions": [
+          {
+            "domId": "back-calendar-home",
+            "targetPageId": "page-calendar-home",
+            "hideEdge": true,
+            "transitionLabel": "返回首页"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "mobile",
+    "projectName": "待办清单小程序",
+    "designLibrary": null
+  }
+}

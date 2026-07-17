@@ -1,0 +1,419 @@
+{
+  "project": {
+    "name": "待办清单小程序",
+    "path": "C:\\Users\\26463\\AppData\\Roaming\\TRAE SOLO\\ModularData\\ai-agent\\work-mode-projects\\6a59cdddf48506b5febd4e02\\todo-miniapp-dark",
+    "operation": "create",
+    "deviceType": "mobile",
+    "language": "zh-CN",
+    "dashboardMode": false,
+    "replicationMode": null,
+    "sourceUrl": null,
+    "visualSpecExcerpt": null,
+    "styleDefinitionBrief": "深灰柔和底色配合单一雾蓝主色，圆润控件与轻量阴影构成克制耐看的夜间效率体验。",
+    "designRead": "待办小程序 / 高频效率用户 / 克制柔和的夜间秩序感 / 中高密度 / 避免纯黑和霓虹科技风",
+    "designDials": {
+      "layoutVariance": 2,
+      "motionIntensity": 2,
+      "visualDensity": 4
+    },
+    "styleContinuityAnchors": {
+      "colorSystem": {
+        "primaryColorRole": "单一雾蓝主色只用于主按钮、关键选中态和进度强调",
+        "brandHuePolicy": "保持深灰中性底色，不引入第二品牌色；分类信息只用中性色与主色浅层叠加",
+        "stateColors": "仅完成、提醒、优先级等语义状态可使用 success warning error info"
+      },
+      "shapeSystem": "控件与卡片统一 12-16px 圆角，长中文标签不使用胶囊形按钮",
+      "typographySystem": "中文无衬线字体系，标题短词化，数字使用等宽表意呈现效率与统计感",
+      "spacingSystem": "主内容采用 16/20/24 间距节奏，避免卡片内部再套卡片",
+      "componentLanguage": "顶部小程序导航、轻投影信息卡、底部厚质感主 CTA、文字型次级操作",
+      "surfaceAndDepth": "背景-表面-悬浮层三级深度，静态卡片以边框和弱阴影分层，浮层才允许更深阴影",
+      "imageryAndIconography": "不依赖装饰图片，以日历、统计、提醒等线性图标和真实任务数据完成视觉叙事",
+      "interactionTone": "点击反馈轻盈克制，主按钮和卡片以微位移与亮度提升表达可操作性"
+    },
+    "specsConstraints": null,
+    "sharedProjectShellContract": {
+      "navigationShell": "统一使用小程序状态栏与居中标题导航，右侧保留系统胶囊，二级页显示返回按钮",
+      "primaryColorSystem": "仅使用 todo-primary 作为核心动作色，所有主 CTA 与关键进度统一调用该色系",
+      "typographySystem": "使用 Inter 与 Noto Sans SC 的无衬线组合，标题层级分明，说明文字降低对比",
+      "radiusScale": "页面中统一使用 12 14 16px 圆角，不出现夸张大圆角和多种 radius 并存",
+      "surfaceDepthModel": "卡片采用深灰分层表面加极轻投影，悬浮按钮与统计浮层使用更高深度",
+      "ctaStyle": "每页仅一个厚质感主按钮，底部满宽放置，按钮内含短文本与轻量图标",
+      "alignmentRules": "页面标题、统计值、表单项和列表信息均保持清晰左对齐，辅助操作右侧收口"
+    },
+    "generationTree": {
+      "root": {
+        "nodeId": "gen-project-shell",
+        "kind": "project-shell",
+        "pageIds": [
+          "page-calendar-home",
+          "page-task-editor",
+          "page-task-stats"
+        ],
+        "output": "partials/project-shell.html",
+        "sharedRegions": [
+          "status bar",
+          "mini program navigation chrome",
+          "page background",
+          "content width rhythm",
+          "footer information block"
+        ],
+        "privateRegions": [],
+        "mutableSlots": [
+          "pageTitle",
+          "leftNavAction",
+          "heroMetrics",
+          "primaryAction"
+        ],
+        "status": "generated",
+        "children": [
+          {
+            "nodeId": "gen-page-calendar-home",
+            "kind": "page-leaf",
+            "pageIds": [
+              "page-calendar-home"
+            ],
+            "output": "pages/calendar-home.html",
+            "sharedRegions": [],
+            "privateRegions": [
+              "calendar switcher",
+              "time grouped todo cards",
+              "completion archive hint",
+              "bottom primary action"
+            ],
+            "mutableSlots": [
+              "pageTitle",
+              "heroMetrics",
+              "primaryAction"
+            ],
+            "status": "generated",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-task-editor",
+            "kind": "page-leaf",
+            "pageIds": [
+              "page-task-editor"
+            ],
+            "output": "pages/task-editor.html",
+            "sharedRegions": [],
+            "privateRegions": [
+              "task form",
+              "tag selection",
+              "priority selector",
+              "reminder switch",
+              "save action area"
+            ],
+            "mutableSlots": [
+              "pageTitle",
+              "leftNavAction",
+              "primaryAction"
+            ],
+            "status": "generated",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-task-stats",
+            "kind": "page-leaf",
+            "pageIds": [
+              "page-task-stats"
+            ],
+            "output": "pages/task-stats.html",
+            "sharedRegions": [],
+            "privateRegions": [
+              "completion ring",
+              "week month chart",
+              "category list",
+              "archive entry"
+            ],
+            "mutableSlots": [
+              "pageTitle",
+              "leftNavAction",
+              "heroMetrics",
+              "primaryAction"
+            ],
+            "status": "generated",
+            "children": []
+          }
+        ]
+      }
+    }
+  },
+  "designSource": {
+    "operatingMode": "free-explore",
+    "libraryIdentity": {
+      "name": null,
+      "id": null,
+      "version": null,
+      "scope": null,
+      "path": null,
+      "versionSource": null
+    },
+    "cssFilePath": "C:\\Users\\26463\\AppData\\Roaming\\TRAE SOLO\\ModularData\\ai-agent\\work-mode-projects\\6a59cdddf48506b5febd4e02\\todo-miniapp-dark\\colors_and_type.css",
+    "brandPrefix": "todo",
+    "themeMode": "dark",
+    "designDecisionSummary": "深灰柔和底，单一雾蓝强调色，移动端信息层级清晰且每页只保留一个厚主按钮。",
+    "componentContractKind": "compact-json",
+    "forbiddenInventedComponents": [],
+    "allowedComponents": [
+      "calendar",
+      "card",
+      "form",
+      "button",
+      "chart",
+      "list"
+    ],
+    "styleConstraints": {
+      "radiusMax": 16,
+      "spacingBase": 4,
+      "fontSizeBody": 15,
+      "fontSizeMin": 12,
+      "controlHeightDefault": 48,
+      "controlHeightLarge": 56
+    },
+    "productContext": {
+      "kitType": "mobile-productivity-ui",
+      "productType": "待办清单小程序"
+    },
+    "actualTokenNameReference": [
+      { "semanticPurpose": "Page background", "tokenName": "todo-background" },
+      { "semanticPurpose": "Primary surface", "tokenName": "todo-surface" },
+      { "semanticPurpose": "Secondary surface", "tokenName": "todo-surface-2" },
+      { "semanticPurpose": "Card surface", "tokenName": "todo-card" },
+      { "semanticPurpose": "Soft card surface", "tokenName": "todo-card-soft" },
+      { "semanticPurpose": "Primary text", "tokenName": "todo-ink" },
+      { "semanticPurpose": "Secondary text", "tokenName": "todo-ink-2" },
+      { "semanticPurpose": "Tertiary text", "tokenName": "todo-ink-3" },
+      { "semanticPurpose": "Border", "tokenName": "todo-line" },
+      { "semanticPurpose": "Brand primary", "tokenName": "todo-primary" },
+      { "semanticPurpose": "Brand emphasis", "tokenName": "todo-primary-strong" },
+      { "semanticPurpose": "Brand soft fill", "tokenName": "todo-primary-soft" },
+      { "semanticPurpose": "Primary on brand", "tokenName": "todo-primary-ink" },
+      { "semanticPurpose": "Success state", "tokenName": "todo-success" },
+      { "semanticPurpose": "Warning state", "tokenName": "todo-warning" },
+      { "semanticPurpose": "Error state", "tokenName": "todo-error" },
+      { "semanticPurpose": "Info state", "tokenName": "todo-info" }
+    ]
+  },
+  "pages": [
+    {
+      "nodeId": "page-calendar-home",
+      "slug": "calendar-home",
+      "title": "日历待办首页",
+      "htmlSrc": "pages/calendar-home.html",
+      "pageIndex": 1,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "通过月周历和时间分组快速查看当天待办，并从底部主按钮进入新增流程",
+      "visualNorthStar": "像夜间效率仪表盘一样清晰沉静，首屏同时呈现时间结构与任务优先级。",
+      "compositionPattern": "Large / medium / small stacked",
+      "continuityAnchors": [
+        "深灰背景与雾蓝主色强调",
+        "12-16px 圆角与极轻投影",
+        "小程序顶部导航和底部厚主 CTA",
+        "短词标题与真实任务数据"
+      ],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [
+        "calendar",
+        "segmented-control",
+        "task-card",
+        "button"
+      ],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": true,
+      "qualityRisks": [
+        "日历与任务卡片并存时首屏密度过高",
+        "移动端多标签可能出现换行"
+      ],
+      "generationNodeId": "gen-page-calendar-home",
+      "generationPath": [
+        "gen-project-shell",
+        "gen-page-calendar-home"
+      ],
+      "inheritedFragments": [
+        "partials/project-shell.html"
+      ],
+      "privateRegions": [
+        "calendar switcher",
+        "time grouped todo cards",
+        "completion archive hint",
+        "bottom primary action"
+      ],
+      "mutableSlots": [
+        "pageTitle",
+        "heroMetrics",
+        "primaryAction"
+      ]
+    },
+    {
+      "nodeId": "page-task-editor",
+      "slug": "task-editor",
+      "title": "新增任务编辑页",
+      "htmlSrc": "pages/task-editor.html",
+      "pageIndex": 2,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "task-driven",
+      "businessScenario": "用户填写标题、日期时间、标签、优先级并开启提醒后保存新任务",
+      "visualNorthStar": "像一张高级手帐输入面板，信息规整、操作明确，所有焦点最终收束到保存动作。",
+      "compositionPattern": "Asymmetric two-column",
+      "continuityAnchors": [
+        "深灰背景与雾蓝主色强调",
+        "12-16px 圆角与极轻投影",
+        "小程序顶部导航和底部厚主 CTA",
+        "短词标题与真实任务数据"
+      ],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [
+        "input",
+        "date-time-picker",
+        "chip-group",
+        "segmented-control",
+        "switch",
+        "button"
+      ],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": true,
+      "qualityRisks": [
+        "表单项过多时移动端层级混乱",
+        "主按钮过重导致底部拥堵"
+      ],
+      "generationNodeId": "gen-page-task-editor",
+      "generationPath": [
+        "gen-project-shell",
+        "gen-page-task-editor"
+      ],
+      "inheritedFragments": [
+        "partials/project-shell.html"
+      ],
+      "privateRegions": [
+        "task form",
+        "tag selection",
+        "priority selector",
+        "reminder switch",
+        "save action area"
+      ],
+      "mutableSlots": [
+        "pageTitle",
+        "leftNavAction",
+        "primaryAction"
+      ]
+    },
+    {
+      "nodeId": "page-task-stats",
+      "slug": "task-stats",
+      "title": "任务数据统计页",
+      "htmlSrc": "pages/task-stats.html",
+      "pageIndex": 3,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "展示完成率、周月趋势、分类统计和归档入口，验证任务闭环已沉淀为数据反馈",
+      "visualNorthStar": "像温和克制的数据日报，图表清楚但不过度炫技，让完成反馈变得有成就感。",
+      "compositionPattern": "Sticky-left, flowing-right",
+      "continuityAnchors": [
+        "深灰背景与雾蓝主色强调",
+        "12-16px 圆角与极轻投影",
+        "小程序顶部导航和底部厚主 CTA",
+        "短词标题与真实任务数据"
+      ],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [
+        "progress-ring",
+        "bar-chart",
+        "stat-list",
+        "button"
+      ],
+      "imagePlan": [],
+      "chartsRequired": true,
+      "miniProgramStyle": true,
+      "qualityRisks": [
+        "图表标签拥挤",
+        "统计模块重复造成结构单一"
+      ],
+      "generationNodeId": "gen-page-task-stats",
+      "generationPath": [
+        "gen-project-shell",
+        "gen-page-task-stats"
+      ],
+      "inheritedFragments": [
+        "partials/project-shell.html"
+      ],
+      "privateRegions": [
+        "completion ring",
+        "week month chart",
+        "category list",
+        "archive entry"
+      ],
+      "mutableSlots": [
+        "pageTitle",
+        "leftNavAction",
+        "heroMetrics",
+        "primaryAction"
+      ]
+    }
+  ],
+  "assets": [],
+  "wiringPlan": [
+    {
+      "sourceNodeId": "page-calendar-home",
+      "domId": "cta-task-editor",
+      "targetPageId": "page-task-editor"
+    },
+    {
+      "sourceNodeId": "page-task-editor",
+      "domId": "cta-task-stats",
+      "targetPageId": "page-task-stats"
+    }
+  ],
+  "hiddenInteractionPlan": [
+    {
+      "sourceNodeId": "page-calendar-home",
+      "domId": "shortcut-task-stats",
+      "targetPageId": "page-task-stats",
+      "hideEdge": true,
+      "reason": "secondary shortcut"
+    },
+    {
+      "sourceNodeId": "page-task-editor",
+      "domId": "back-calendar-home",
+      "targetPageId": "page-calendar-home",
+      "hideEdge": true,
+      "reason": "return"
+    },
+    {
+      "sourceNodeId": "page-task-stats",
+      "domId": "back-calendar-home",
+      "targetPageId": "page-calendar-home",
+      "hideEdge": true,
+      "reason": "return"
+    }
+  ]
+}
